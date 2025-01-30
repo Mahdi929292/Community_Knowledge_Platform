@@ -3,38 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Community Platform</title>
+    <title>Login - Community Platform</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
     <header>
         <nav>
-            <span id="welcome-message" class="welcome-message">Welcome User</span>
-            <a href="profile.html">Profile</a>
-            <a href="create-post.html">Create Post</a>
-            <a href="login.html" onclick="logout()">Logout</a>
-            <a href="search.html" class="search-icon">
-                <img src="images/search-interface-symbol.png" alt="Search" class="search-img">
-            </a>
+            <a href="register.html">Register</a>
         </nav>
     </header>
-    
 
     <main>
-        <section id="posts-container">
-            
-        </section>
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+        <p id="error-message" class="error"></p>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Community Knowledge Sharing Platform</p>
-        <a href="about.html">About</a>
-        <a href="privacy.html">Privacy Policy</a>
-    </footer>
-    <script src="js/indexpost.js"></script>
+    
 
+    <script src="js/login.js"></script>
 </body>
 </html>

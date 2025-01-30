@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Community Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <span id="welcome-message" class="welcome-message">Welcome User</span>
+            <a href="index.html">Home</a>
+            <a href="create-post.html">Create Post</a>
+            <a href="login.html" onclick="logout()">Logout</a>
+            <a href="search.html" class="search-icon">
+                <img src="images/search-interface-symbol.png" alt="Search" class="search-img">
+            </a>
+        </nav>
+    </header>
+    
+    <main>
+        <h1 id="profile-title">Profile of User</h1>
+        <p id="user-email">Email: user@gmail.com</p>
+    
+        <section>
+            <h2>Edit Profile</h2>
+            <form id="edit-username-form">
+                <label for="new-username">New Username:</label>
+                <input type="text" id="new-username" placeholder="Enter new username">
+                <button type="submit">Update Username</button>
+            </form>
+            <form id="edit-password-form">
+                <label for="new-password">New Password:</label>
+                <input type="password" id="new-password" placeholder="Enter new password">
+                <button type="submit">Update Password</button>
+            </form>
+        </section>
+    
+        <section>
+            <h2>Your Posts</h2>
+            <div id="user-posts">
+                <p>Loading posts...</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Community Knowledge Sharing Platform</p>
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy Policy</a>
+    </footer>
+    <script src="js/profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav a {
+        margin: 0.5rem 0;
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
+@media (max-width: 600px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.jersey-15-regular {
+    font-family: "Jersey 15", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body {
+    font-family: "Ubuntu", serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: #FFFFFF;
+
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh;
+}
+
+a {
+    color: #FEDA75;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #FFDC80;
+}
+
+header {
+    background: linear-gradient(90deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: #FFFFFF;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-bottom: 2px solid #e6683c; 
+}
+header nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+header nav a {
+margin: 0 1rem;
+font-weight: bold;
+color: #FFFFFF;
+transition: color 0.3s;
+}
+header nav span{
+    margin: 0 1rem;
+font-weight: bold;
+color: #FFFFFF;
+}
+
+header nav a:hover {
+color: #FFDC80;
+}
+
+footer {
+    background: #262626;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto; 
+}
+
+main {
+    max-width: 800px;
+    width: 100%; 
+    margin: 2rem auto;
+    background: #FFFFFF;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #262626;
+    flex: 1; 
+}
+
+
+h1, h2, h3 {
+    color: #262626;
+}
+
+p {
+    line-height: 1.6;
+}
+
+button {
+    background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: #FFFFFF;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+    width: 100%;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 1rem;
+    color: #262626;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.5rem;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    background: #F9F9F9;
+    color: #262626;
+    height: auto; 
+    box-sizing: border-box;
+}
+
+form textarea {
+    resize: none; 
+    min-height: 100px; 
+    height: auto;
+    overflow-y: auto;
+}
+
+form button {
+    margin-top: 1rem;
+    padding: 0.7rem;
+    font-size: 1rem;
+    background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+form button:hover {
+    opacity: 0.9;
+}
+
+article {
+    background: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+article h2 {
+    margin-bottom: 0.5rem;
+    color: #262626;
+}
+
+article p {
+    font-size: 0.9rem;
+    color: #7F8C8D;
+}
+.search-icon {
+    margin-left: auto; 
+}
+
+.search-img {
+    width: 20px; 
+    height: auto; 
+}
+
+.search-icon:hover .search-img {
+    opacity: 0.7; 
+}
+form select {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.5rem;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    background: #F9F9F9;
+    color: #262626;
+    font-size: 1rem;
+    height: auto; 
+    box-sizing: border-box;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23262626'%3E%3Cpath fill-rule='evenodd' d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z' clip-rule='evenodd'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.7rem center;
+    background-size: 1rem;
+}
+
+form select:focus {
+    outline: none;
+    border-color: #f09433;
+    box-shadow: 0 0 4px rgba(240, 148, 51, 0.6);
+}
+
+form select option {
+    background: #FFFFFF;
+    color: #262626;
+}

@@ -1,0 +1,228 @@
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav a {
+        margin: 0.5rem 0;
+    }
+
+    header nav {
+        justify-content: space-between;
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .search-icon {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    header nav a {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+body {
+    font-family: "Ubuntu", serif;
+    background-color: #f4f4f9;
+    background-image: url(https://images.unsplash.com/photo-1557683316-973673baf926?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+header {
+    width: 100%;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 50px;
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-left: 20px;
+}
+
+header nav a:hover {
+    background-color: #005065;
+}
+
+#welcome-message {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.search-icon {
+    margin-left: auto;
+    padding: 8px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-img {
+    width: 20px;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+.search-icon:hover .search-img {
+    opacity: 0.7;
+}
+
+.search-icon:hover {
+    transform: scale(1.1);
+    background-color: #005065;
+}
+
+main {
+    padding: 40px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    margin-top: 100px;
+    background: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #00708d;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #00708d;
+}
+
+h2 a {
+    color: #00708d;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+h2 a:hover {
+    color: #005065;
+    transform: scale(1.05); 
+}
+
+article {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.desc {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    color: #003542;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: 0.5s;
+}
+
+footer a:hover {
+    background-color: #00708d;
+}
+
+.error {
+    color: #ff4444;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    opacity: 0;
+    animation: fadeInError 0.5s ease-in-out forwards;
+    transition: 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeInError {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

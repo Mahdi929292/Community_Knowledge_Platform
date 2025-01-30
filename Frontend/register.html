@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Community Platform</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Register</h1>
+        <form id="registerForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="role">Role:</label>
+            <select id="role" name="role" required>
+                <option value="Gamer">Gamer</option>
+                <option value="Developer">Developer</option>
+                <option value="Content Creator">Content Creator</option>
+                <option value="Moderator">Moderator</option>
+            </select>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            
+
+            <button type="submit">Register</button>
+        </form>
+        <p id="error-message" class="error"></p>
+    </main>
+
+    
+
+    <script src="js/register.js"></script>
+</body>
+</html>

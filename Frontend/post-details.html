@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Details - Community Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/post-details.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <span id="welcome-message" class="welcome-message">Welcome User</span>
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="create-post.html">Create Post</a>
+            <a href="login.html" id="logout-link">Logout</a>
+            <a href="search.html" class="search-icon">
+                <img src="images/search-interface-symbol.png" alt="Search" class="search-img">
+            </a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="post-container">
+            <h1 id="post-title">Loading...</h1>
+            <p id="post-content"></p>
+        </section>
+        
+        <section class="voting-section">
+            <button id="upvote-button" class="vote-button upvote">👍 </button>
+            <span id="vote-count" class="vote-count">0</span>
+            <button id="downvote-button" class="vote-button downvote">👎 </button>
+        </section>
+        
+        <section id="comments-section">
+            <h2>Comments</h2>
+            <div id="comments-container">
+                <p>Loading comments...</p>
+            </div>
+            <form id="comment-form">
+                <input id="comment-input" placeholder="Write your comment here..." required>
+                <button type="submit">Post Comment</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Community Knowledge Sharing Platform</p>
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy Policy</a>
+    </footer>
+    <script src="js/post-details.js"></script>
+</body>
+</html>
